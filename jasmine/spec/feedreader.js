@@ -64,6 +64,7 @@ $(function() {
             expect($("body").hasClass("menu-hidden")).toBe(true);
         });
 
+        // Check if menu sccessfully shows/hides when menu button is clicked
         it('is hidden or shown when clicked', function() {
 
             // Get current hidden state
@@ -89,6 +90,7 @@ $(function() {
         });
       });
 
+      // Test if .entry elements are added to DOM when feed is loaded
       it('successfully loads feed data', function(done) {
         expect($(".feed .entry").length).not.toBe(0);
         done();
@@ -121,6 +123,7 @@ $(function() {
 
       });
 
+      // Test to see if first link in item list is different now after second feed is loaded
       it('successfully switches feeds', function(done) {
         expect($(".feed .entry-link")[0].href).not.toBe(first_feed_item_link);
         done();
