@@ -37,6 +37,7 @@ $(function() {
          function test_allFeeds_item_for_url(item) {
             it('has a URL defined and populated', function() {
                 expect(item.url).toBeDefined();
+                expect(item.url).not.toBeNull();
                 expect(item.url).not.toBe("");
             });
          }
@@ -52,6 +53,7 @@ $(function() {
          function test_allFeeds_item_for_name(item) {
             it('has a name defined and populated', function() {
                 expect(item.name).toBeDefined();
+                expect(item.name).not.toBeNull();
                 expect(item.name).not.toBe("");
             });
          }
